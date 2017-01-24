@@ -1,0 +1,14 @@
+<HTML>
+   <HEAD>
+     <TITLE>Welcome Email</TITLE>
+   </HEAD>
+   <BODY>
+     Hi $NAME,
+      
+     Your leave approved.
+     
+     Thanks,
+     Revature Tech.     
+      
+   </BODY>
+ </HTML>

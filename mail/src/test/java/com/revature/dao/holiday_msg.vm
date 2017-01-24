@@ -1,0 +1,31 @@
+<HTML>
+   <HEAD>
+     <TITLE>Project Completion Report Email</TITLE>
+  </HEAD>
+   <BODY>
+    
+  
+     <br/>
+     <h4> Holidays Report </h4>
+     #set ( $rowCount = 0 )
+     <table border="1">
+       <tr><th> Holiday Date </th><th> Holiday Reason </th></tr>
+    #foreach( $project in $PROJECT_REPORT_LIST )  
+    #set ( $rowCount = $rowCount + 1 )  
+        <tr>
+          <td>
+            $project.getHolidayDate()
+          </td>
+          <td>
+            $project.getStatus()
+          </td>
+        </tr>     
+    #end
+    </table>
+    
+      <br/>
+     <b>Regards <br/>
+     Revature Team.</b>    
+      
+   </BODY>
+</HTML>
